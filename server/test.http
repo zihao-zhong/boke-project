@@ -1,0 +1,28 @@
+@url=http://localhost:3000/admin/api
+
+@json=Content-Type: application/json
+
+###
+GET {{url}}/user
+
+
+###
+POST {{url}}/category/create
+{{json}}
+
+{
+  "name": "JavaScript"
+}
+
+### 
+GET {{url}}/category/list
+
+
+### 
+POST {{url}}/login/create
+{{json}}
+
+{
+  "username": "admin",
+  "password": "123456"
+}

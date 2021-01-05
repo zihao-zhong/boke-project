@@ -1,0 +1,148 @@
+@import '../icon/iconfont.css';
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  min-width: 1200px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  color: #3e3e3e;
+  list-style-type: none;
+}
+
+div, h1, h2, h3 {
+  color: #3e3e3e;
+}
+
+a {
+  color: #3e3e3e;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+input {
+  outline: 0px;
+}
+// 文字换行
+.word-wrap {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// 字體大小
+$font-sizes: (
+  12: 12px,
+  14: 14px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  30: 30px,
+  36: 36px,
+);
+
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+.cursor-no {
+  cursor: no-drop;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-hidden {
+  overflow: hidden;         /*超出部分隐藏*/
+  text-overflow: ellipsis;  /* 超出部分显示省略号 */
+  white-space: nowrap;      /*规定段落中的文本不进行换行 */
+}
+
+// 加粗
+.bold {
+  font-weight: 600;
+}
+
+.box-shadow {
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,0.11);
+}
+
+.z-index-3000 {
+  z-index: 3000 !important;
+}
+
+// 滾動條
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  background: #f0f0f0;
+}
+*::-webkit-scrollbar-button {
+  display: none;
+}
+*::-webkit-scrollbar-track-piece {
+  display: none;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-corner {
+  display: none;
+}
