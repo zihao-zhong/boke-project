@@ -1,7 +1,8 @@
 const express = require('express')
-
 const app = express()
+const initConfig = require('./config');
 
+initConfig()
 
 app.set('secret', 'userlogintoken')
 
@@ -11,6 +12,7 @@ app.use(express.json())
 
 // 连接数据库
 require('./plugins/db')(app)
+
 
 // 路由
 require('./routers/admin')(app)
