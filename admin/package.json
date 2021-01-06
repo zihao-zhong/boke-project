@@ -1,5 +1,6 @@
 {
   "name": "boke",
+  "auther": "zihao",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,6 +26,7 @@
     "@vue/cli-plugin-vuex": "^4.3.0",
     "@vue/cli-service": "^4.3.0",
     "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^5.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.12.0",
