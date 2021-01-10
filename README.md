@@ -3,12 +3,12 @@
 
 ## 后台使用 vue-cli 生成，使用 element-ui 作为 ui 框架
 
+### 数据库使用 mongoDB 
+
+### 后端使用 express 框架
+
 ### 部署到本地的 nginx
 
 ```
-cd /Users/luke/Documents/project/boke-project/admin
-npm run build   # 打包
-rm -rf /usr/local/var/www/html/*     # 清空网站根目录下的所有文件
-mv ./dist/* /usr/local/var/www/html  # 把打包好的文件添加到 nginx 的网站根目录
-nginx -s reload   # 然后重启 nginx 服务
+npm run build-admin
 ```

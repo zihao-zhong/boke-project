@@ -1,0 +1,24 @@
+{
+  "name": "boke-project",
+  "version": "1.0.0",
+  "description": "个人博客项目",
+  "main": "server/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build-admin": "node build/build-admin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zihao-web/boke-project.git"
+  },
+  "author": "zihao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zihao-web/boke-project/issues"
+  },
+  "homepage": "https://github.com/zihao-web/boke-project#readme",
+  "dependencies": {
+    "compression-webpack-plugin": "^7.1.1",
+    "shelljs": "^0.8.4"
+  }
+}
