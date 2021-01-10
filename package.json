@@ -5,6 +5,7 @@
   "main": "server/index.js",
   "devDependencies": {},
   "scripts": {
+    "test": "node build/test.js",
     "build-admin": "node build/build-admin.js"
   },
   "repository": {
@@ -12,13 +13,16 @@
     "url": "git+https://github.com/zihao-web/boke-project.git"
   },
   "author": "zihao",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zihao-web/boke-project/issues"
   },
   "homepage": "https://github.com/zihao-web/boke-project#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "compression-webpack-plugin": "^7.1.1",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
     "shelljs": "^0.8.4"
   }
 }
