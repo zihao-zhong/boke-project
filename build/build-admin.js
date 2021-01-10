@@ -1,6 +1,6 @@
-var shell = require('shelljs');
 const chalk = require('chalk');
 const figlet = require('figlet');
+const shell = require('shelljs');
 const inquirer = require('inquirer');
 
 const init = () => {
