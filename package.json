@@ -5,6 +5,7 @@
   "main": "server/index.js",
   "devDependencies": {},
   "scripts": {
+    "dev": "cd admin && npm run dev",
     "test": "node build/test.js",
     "build-admin": "node build/build-admin.js"
   },

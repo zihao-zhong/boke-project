@@ -27,6 +27,7 @@ const askQuestions = () => {
 };
 
 function checkBranch(branch) {
+  shell.exec('git fetch origin');
   if (shell.exec(`git checkout ${branch}`, { silent: true }).code !== 0) {
     if (shell.exec(`git checkout -b ${branch} origin/${branch}`, { silent: true }).code !== 0) {
       console.log(chalk.red('Error: 找不到该分支，请确认分支是否填写正确'));
@@ -34,6 +35,7 @@ function checkBranch(branch) {
     }
   }
   shell.echo(chalk.green(`已切换到 ${branch} 分支`));
+  shell.exec('git pull');
 }
 
 function handleBuild() {
