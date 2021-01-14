@@ -12,3 +12,14 @@
 ```
 npm run build-admin
 ```
+
+### 使用 pm2 启动 node 服务
+
+> pm2 一般用于服务器部署 node 服务，本地还是使用 nodemon 或者 vscode 启动 node 服务。pm2 无法实现热更新
+
+```
+/Users/luke/Documents/project/boke-project/server
+pm2 start index.js
+```
+
+
